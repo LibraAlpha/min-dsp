@@ -1,0 +1,38 @@
+app:
+  name: "min-dsp"
+  version: "1.0.0"
+  port: 18080
+  mode: "debug"  # debug or release
+
+log:
+  level: "info"
+  filename: "logs/app.log"
+  max_size: 100    # MB
+  max_backups: 10
+  max_age: 30      # days
+  compress: true
+
+database:
+  driver: "mysql"
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "root"
+  dbname: "min_dsp"
+  charset: "utf8mb4"
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 3600  # seconds
+
+redis:
+  host: "localhost"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 100
+  min_idle_conns: 10
+
+jwt:
+  secret: "your-secret-key"
+  expire: 86400  # seconds
+  issuer: "min-dsp" 

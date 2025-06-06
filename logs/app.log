@@ -1,0 +1,1 @@
+{"level":"info","time":"2025-06-06T16:54:53.317+0800","caller":"min-dsp/main.go:35","msg":"服务启动","app":"min-dsp","version":"1.0.0","port":"18080","mode":"debug"}
